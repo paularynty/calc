@@ -94,7 +94,7 @@ button {
 
 .button-theme {
   background-color: var(--button-theme-bg-color);
-  color: #009DE0;
+  color: #009de0;
   box-shadow: none;
 }
 
