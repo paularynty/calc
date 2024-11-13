@@ -90,43 +90,43 @@ const Calculator: React.FC = () => {
           value={cartValue}
           onChange={handleCartValueChange}
         />
-      <p>Item quantity</p>
-      <input
-        className="input"
-        type="number"
-        min="0"
-        value={itemQty}
-        onChange={handleQtyChange}
+        <p>Item quantity</p>
+        <input
+          className="input"
+          type="number"
+          min="0"
+          value={itemQty}
+          onChange={handleQtyChange}
         ></input>
-      <p>Delivery distance (in meters)</p>
-      <input
-        className="input"
-        type="number"
-        min="0"
-        value={distance}
-        onChange={handleDistanceChange}
+        <p>Delivery distance (in meters)</p>
+        <input
+          className="input"
+          type="number"
+          min="0"
+          value={distance}
+          onChange={handleDistanceChange}
         ></input>
-      <p>Delivery date</p>
-      <input
-        className="input"
-        type="date"
-        value={date}
-        onChange={handleDateChange}
+        <p>Delivery date</p>
+        <input
+          className="input"
+          type="date"
+          value={date}
+          onChange={handleDateChange}
         ></input>
-      <p>Delivery time</p>
-      <input
-        className="input"
-        type="time"
-        value={time}
-        onChange={handleTimeChange}
+        <p>Delivery time</p>
+        <input
+          className="input"
+          type="time"
+          value={time}
+          onChange={handleTimeChange}
         ></input>
-      <div className="button-wrapper">
-        <button onClick={calculateTotalFee}>Calculate</button>
-      </div>
-      {total !== null && (
+        <div className="button-wrapper">
+          <button onClick={calculateTotalFee}>Calculate</button>
+        </div>
+        {total !== null && (
           <div className="result">Total delivery fee: €{total}</div>
         )}
-        </div>
+      </div>
     </div>
   );
 };
