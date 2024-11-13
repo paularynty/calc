@@ -45,7 +45,7 @@
   background-color: var(--box-background-color);
   min-width: 60vh;
   min-height: 60vh;
-  border-radius: 5px;
+  border-radius: var(--corner-radius-large);
   box-shadow: var(--shadow-small);
 }
 
@@ -70,7 +70,7 @@
   width: 12rem;
   height: 2rem;
   border: 2px solid var(--color-border);
-  border-radius: 0.2rem;
+  border-radius: var(--corner-radius-small);
   background-color: transparent;
   font-family: var(--font-family-sans);
   color: var(--color-text);
@@ -84,7 +84,7 @@ button {
   width: 8rem;
   height: 3rem;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--corner-radius-medium);
   margin: 1rem 0;
   font-family: var(--font-family-sans);
   font-size: 1rem;
