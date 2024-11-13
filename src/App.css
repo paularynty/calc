@@ -1,38 +1,104 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App.light-mode {
+  --background-color: #fbfbfb;
+  --box-background-color: #ffffff;
+  --button-theme-bg-color: #ebf7fd;
+  --color-text: #000000;
+  --color-border: #e0e0e0;
+  --button-color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App.dark-mode {
+  --background-color: black;
+  --box-background-color: #242424;
+  --button-theme-bg-color: rgba(0, 157, 224, 0.12);
+  --color-text: #ffffff;
+  --color-border: #555555;
+  --button-color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
+.body {
+  background-color: var(--background-color);
+  color: var(--color-text);
   min-height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box {
+  background-color: var(--box-background-color);
+  min-width: 60vh;
+  min-height: 60vh;
+  border-radius: 5px;
+  box-shadow: var(--shadow-small);
+}
+
+.title {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  font-family: "Omnes Bold";
+  font-size: 2rem;
+  margin: 0px 0px 8px;
+  color: var(--color-text);
+}
+
+.search {
+  padding: 2rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  width: 12rem;
+  height: 2rem;
+  border: 2px solid var(--color-border);
+  border-radius: 0.2rem;
+  background-color: transparent;
+  font-family: var(--font-family-sans);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+button {
+  z-index: 1;
+  background-color: #009de0;
+  color: var(--button-color);
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem 0;
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  box-shadow: var(--shadow-small);
+  cursor: pointer;
+}
+
+.button-theme {
+  background-color: var(--button-theme-bg-color);
+  color: #009DE0;
+  box-shadow: none;
+}
+
+.result {
+  justify-content: left;
+  color: var(--color-text);
 }

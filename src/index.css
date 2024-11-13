@@ -1,13 +1,41 @@
+:root {
+  --color-text: #202125;
+  --color-shadow: #0000001f;
+  --shadow-xsmall: 0px 1px 2px 0px var(--color-shadow),
+    0px 0px 1px 0px var(--color-shadow);
+  --shadow-small: 0px 2px 8px 0px var(--color-shadow),
+    0px 1px 2px 0px var(--color-shadow), 0px 0px 1px 0px var(--color-shadow);
+  --shadow-medium: 0px 4px 12px 0px var(--color-shadow),
+    0px 1px 2px 0px var(--color-shadow), 0px 0px 1px 0px var(--color-shadow);
+  --shadow-large: 0px 8px 28px 0px var(--color-shadow),
+    0px 2px 6px 0px var(--color-shadow), 0px 0px 1px 0px var(--color-shadow);
+  --font-family-sans: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Arimo", "Open Sans", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --corner-radius-none: 0px;
+  --corner-radius-small: 4px;
+  --corner-radius-medium: 8px;
+  --corner-radius-large: 12px;
+  --corner-radius-xlarge: 16px;
+  --color-border: #e4e4e5;
+  --color-text: #009de0;
+}
+
+@font-face {
+  font-family: "Omnes Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Omnes Bold"), url("./utils/Omnes_Bold.woff") format("woff");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
